@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="FILE_APPENDER" class="ch.qos.logback.core.FileAppender">
+        <file>numbers.log</file>
+        <param name="Append" value="false"/>
+        <encoder>
+            <pattern>%msg</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Loggers -->
+    <logger name="org.springframework">
+        <level value="OFF"/>
+    </logger>
+
+    <logger name="org.springframework.integration">
+        <level value="OFF"/>
+    </logger>
+
+    <logger name="org.springframework.integration.samples">
+        <level value="OFF"/>
+    </logger>
+
+    <logger name="com.kush.newrelic.server">
+        <level value="INFO"/>
+    </logger>
+    <logger name="com.kush.newrelic">
+        <level value="OFF"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="FILE_APPENDER"/>
+    </root>
+</configuration>
