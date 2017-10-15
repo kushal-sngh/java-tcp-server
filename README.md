@@ -17,7 +17,7 @@ kushalvir
 1. ValiadteInput.java is validating input using regex.
 2. Thread-safe ConcurrentSkipListSet is used to avoid duplicates.
 3. For reporting purpose AtomicInteger class is used since its work well in multithreading environment.
-4. @Async anotation is used on logMessageAndIncreementCounters to not to block the threads while validing and logging messages.
+4. @Async anotation is used on logMessageAndIncreementCounters to not to block the threads while validating and logging messages.
 5. TcpConnectionInterceptor and TcpConnectionInterceptorSupport are used to close current tcp connection in case of invalid input.
  
 
@@ -26,7 +26,7 @@ kushalvir
 1. Server-native newline sequence is determined using System.lineSeparator()
 2. numbers.log is located in the project directory: /${project-dir}/numbers.log
 3. During Integration testing throughput was not tested as per requirements. 
-4. Assumes you have Java 8 mavan is installed locally
+4. Assumes you have Java 8 and mavan are installed locally
 
 
 ## Testing ##
